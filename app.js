@@ -1,16 +1,18 @@
 // Exercise 1 Function Basic
 function greet(name) {
-    console.log(name);
+    console.log("Hello! " + name);
     return;
 }
 greet("Marco");
 
 // Exercise 2 Function Expression
 function expression(num1, num2){
-    return num1 + num2;
+    console.log("Add: " + num1 + num2);
+    console.log(Sub: ${num1 - num2}); 
+    console.log("Mult: " + num1 * num2); 
+    console.log("Divi: " + num1 / num2);  
 }
-let out = expression(5, 3);
-console.log("The sum of 2 numbers is: " + out);
+expression(5, 3);
 
 // Exercise 3 Is Even?
 function isEven(number){
@@ -25,9 +27,11 @@ isEven(4);
 isEven(5);
 
 // Exercise 4 Grade Calculator
+
+
 function gradeCalc(grade) {
 
-    grade = prompt("Wwhat grade did you got?");
+    grade = prompt("What grade did you got?");
     
         if(grade >= 90) {
             alert("You got 'A' grade");
@@ -41,9 +45,7 @@ function gradeCalc(grade) {
         else if(grade >= 60) {
             alert("You got 'D' grade");
         }
-        else if(grade <= 60) {
+        else if(grade < 60) {
             alert("You got 'F' grade");
         }
 }
-
-
